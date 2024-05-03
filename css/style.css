@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F3F7FB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 40px);
+    width: calc(100vw - 40px);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    background-color: white;
+    height: 100%;
+    border-radius: 26px;
+}
+
+nav h1 {
+    margin-top: 40px;
+    font-size: 32px;
+    font-weight: 800;
+    color: #333;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc((100% - 300px) * 0.8);
+    margin-right: calc((100% - 300px) * 0.1);
+    height: 100%;
+    border-radius: 26px;
+}
+
+#chat__message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: calc(97% - 110px);
+    margin-top: 3%;
+    padding: 0 20px;
+    overflow-y: auto;
+}
+
+.chat__message__user {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.input {
+    display: flex;
+    position: static;
+    bottom: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 26px;
+    padding: 0 20px;
+    margin-top: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 8px 24px -4px rgba(0, 0, 0, 0.4);
+}
+
+.input input {
+    width: calc(100% - 60px);
+    height: 100%;
+    border: none;
+    outline: none;
+    color: rgba(0, 0, 0, 1);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    border-radius: 30px;
+    padding: 0 20px;
+}
+
+.input button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #5661F6;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.input button:hover {
+    background-color: #464c9d;
+}
+
